@@ -1,11 +1,28 @@
 
 // start .sAbout
 .sAbout {
-	
+	background-color: #e0ddc9;
 	&__imgWrap {
 		max-width: rem(300);
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.section-title {
+		position: relative;
+		text-transform: uppercase;
+		padding-top: rem(30);
+		margin-top: rem(20);
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			@include a-cent(x);
+			width: rem(124);
+			height: 1px;
+			background-color: #000;
+		}
 	}
 
 	@include media-breakpoint-up(sm) {}
