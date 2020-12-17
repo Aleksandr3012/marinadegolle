@@ -1,9 +1,7 @@
 mixin sAboutPhoto(data)
 	// start sAboutPhoto
-	+b.SECTION.sAboutPhoto.section#sAboutPhoto&attributes(attributes)
+	+b.sAboutPhoto.section#sAboutPhoto&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sAboutPhoto
-				
-			.row
+			+e.imgWrap
+				+pic('marina-photo.jpg','','')
 	// end sAboutPhoto

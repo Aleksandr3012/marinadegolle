@@ -1,6 +1,9 @@
 
 // start .sAbout
 .sAbout {
+	--sPT: #{rem(45)};
+	--sPB: #{rem(45)};
+	--sTPB: 0; 
 	background-color: #e0ddc9;
 	&__imgWrap {
 		max-width: rem(300);
@@ -14,13 +17,18 @@
 		padding-top: rem(30);
 		margin-top: rem(20);
 
+		h1 {
+			font-size: rem(23);
+			font-weight: normal;
+		}
+
 		&::before {
 			content: '';
 			position: absolute;
 			top: 0;
 			@include a-cent(x);
 			width: rem(124);
-			height: 1px;
+			height: 2px;
 			background-color: #000;
 		}
 	}

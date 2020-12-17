@@ -1,7 +1,17 @@
 
 // start .sAboutPhoto
 .sAboutPhoto {
-	
+	background-color: #474747;
+	--sPT: #{rem(25)};
+	--sPB: #{rem(25)};
+
+	&__imgWrap {
+		max-width: rem(253);
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+		overflow: hidden;
+	}
 
 	@include media-breakpoint-up(sm) {}
 	//

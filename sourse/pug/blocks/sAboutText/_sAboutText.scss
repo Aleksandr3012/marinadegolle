@@ -1,7 +1,14 @@
 
 // start .sAboutText
 .sAboutText {
-	
+	background-color: #222222;
+	--sPT: #{rem(50)};
+	--sPB: #{rem(60)};
+	color: rgb(224, 221, 201);
+
+	p {
+		margin-bottom: 1.7rem;
+	}
 
 	@include media-breakpoint-up(sm) {}
 	//
