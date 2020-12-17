@@ -1,0 +1,27 @@
+mixin sShowroom(data)
+	// start sShowroom
+	+b.sShowroom.section#sShowroom&attributes(attributes)
+		.container
+				
+			.row
+				mixin item(link)
+					.col-sm-6.col-lg-3
+						+e.link(href="#")
+							img.res-i(src= link, alt="" loading="lazy")
+				+item('https://instagram.fhrk2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/131256292_749868885887879_4897843203759279091_n.jpg?_nc_ht=instagram.fhrk2-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=bPrewZbnAPMAX80uTQl&tp=1&oh=aeec379dce074651b53a584e62b53b4c&oe=60013480')
+				+item('https://instagram.fhrk2-1.fna.fbcdn.net/v/t51.2885-15/e35/130729614_685493972153712_4052584756940148427_n.jpg?_nc_ht=instagram.fhrk2-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=YNuznHMqQA0AX9HJ-b2&tp=1&oh=da9e3750a4ae4d710e41617c514d663b&oe=600249F1')
+				+item('https://instagram.fhrk2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/129720878_392577038841395_3319133928442992804_n.jpg?_nc_ht=instagram.fhrk2-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=vtMKdP3H6WkAX9uB9l1&tp=1&oh=cd0b0918f82d0b9f750b70ca4da39390&oe=6001E437')
+				+item('https://instagram.fhrk2-1.fna.fbcdn.net/v/t51.2885-15/e35/129174111_373915787005390_3344183239426788688_n.jpg?_nc_ht=instagram.fhrk2-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=jRD7UlPHDBcAX-iPIY_&tp=1&oh=7678b811716f7a83f0b21f1e6e3118b7&oe=6002745E')
+				+item('https://instagram.fhrk2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/127201788_212365820288822_2780283969918781817_n.jpg?_nc_ht=instagram.fhrk2-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=KKusjbrbqvYAX_yhY8t&tp=1&oh=f51737570f32aae89ff6e8938e53e45d&oe=60023BBA')
+				+item('https://instagram.fhrk2-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/125518874_372728423830471_8428732540987713928_n.jpg?_nc_ht=instagram.fhrk2-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=DOQMQ7eHXOsAX90MgIT&tp=1&oh=4d52e5030e65b6f75f909217f9498fd9&oe=6002714E')
+				+item('https://instagram.fhrk2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/124101819_358246978579442_8959269040077701627_n.jpg?_nc_ht=instagram.fhrk2-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=A9rAF9uw2rsAX9YdS7z&tp=1&oh=d3a9ab79f710b53adb23618d5ca28c94&oe=60004E5B')
+				+item('https://instagram.fhrk2-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/122611903_350614092876010_8140906425594825787_n.jpg?_nc_ht=instagram.fhrk2-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=A7GHdeqGQZQAX_nAFrB&tp=1&oh=3b5b112a875c03bce407ca7103668507&oe=6001B8D3')
+			+e.fot
+				+soc()
+				h2 Ждём вас в нашем шоуруме<br> по адресу:
+				+e.addres г. Москва, 1-ый Зачатьевский переулок, 5
+				+e.phone Телефон:
+					a(href="tel:+79255061717") +79255061717
+				+e.mail E-mail:
+					a(href="mailto:office@degolle.com") office@degolle.com
+	// end sShowroom

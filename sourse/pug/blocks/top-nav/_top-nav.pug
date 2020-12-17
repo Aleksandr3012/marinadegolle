@@ -1,0 +1,39 @@
+mixin mob-mnu()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.toggle-menu-mobile--js.d-lg-none
+		+e.menu МЕНЮ
+		span
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+			+e.logo(href="#")
+				img.res-i(src="img/svg/logo.svg", alt="")
+			+mnu()
+			+mnu-2()
+			.text-right
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			+e.lang(href="#").d-lg-none English
+			.d-none.d-lg-block
+				.row
+					.col
+						+mnu()
+					.col-auto
+						+e.logo(href="#")
+							img.res-i(src="img/svg/logo.svg", alt="")
+					.col
+						+mnu-2().--mnuRight
+					
+	// end top-nav

@@ -1,0 +1,27 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		+pic('headerBlock-bg.jpg','bg','')(class="picture-bg")
+		.container
+
+			+e.mainBlock
+				.row.justify-content-between
+					.col-lg-auto
+						+e.logo
+							img(src="img/svg/mdg_logo.svg", alt="")
+					.col-lg-auto
+						+e.txt MOSCOW — MILAN
+		+e.about
+			.container
+				.row
+					.col-md.order-md-2
+						+e.photoWrap
+							+pic('marina.jpg','','')
+					.col-6.col-md-auto.order-md-1
+						p №1 В СВОЁМ ДЕЛЕ<br>Непревзойденная экспертиза<br>в работе с кожей крокодила
+					.col-6.col-md-auto.order-md-3
+						+e.rightText
+							p РУЧНАЯ РАБОТА<br>Роскошь и совершенство<br>в каждой детали
+
+						
+	// end headerBlock

@@ -1,0 +1,63 @@
+// start .sCatalog
+.sCatalog {
+	
+	--sPT: #{rem(30)};
+	--sTPB: #{rem(80)};
+	--sPB: #{rem(85)};
+
+
+	&__item {
+		// height: calc(100% - #{rem(60)});
+		margin-bottom: rem(60);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__imgWrap {
+		margin-bottom: rem(18);
+		width: 100%;
+		picture {
+			@include block(260,195);
+			// min-height: rem(100);
+
+			img {
+				@include a-cent;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	&__title {
+		font-size: $small;
+		margin-bottom: rem(15);
+		color: #000;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	&__btn {
+		@extend .btn;
+		@extend .btn-dark;
+		font-size: rem(14);
+		font-weight: 700;
+		
+	}
+
+
+
+
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sCatalog

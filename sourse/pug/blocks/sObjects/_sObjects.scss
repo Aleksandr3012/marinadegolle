@@ -1,0 +1,57 @@
+// start .sObjects
+.sObjects {
+
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(110)};
+		--sPB: #{rem(70)};
+	}
+	background-color: #222222;
+
+	.section-title {
+		display: flex;
+		justify-content: center;
+		@include media-breakpoint-up(md) {
+			justify-content: space-between;
+		}
+		align-items: center;
+
+		h2 {
+			@include rfs(22px);
+			color: #e0ddc9;
+			line-height: 1.55;
+			font-weight: 400;
+		}
+
+		.icon {
+			color: $primary;
+			font-size: rem(130);
+			@include media-breakpoint-up(xl) {
+				margin-right: rem(53);
+			}
+		}
+	}
+
+	.container {
+		@include media-breakpoint-up(xl) {
+			max-width: 1030px;
+		}
+	}
+
+	.row {
+		@include media-breakpoint-up(lg) {
+			@include roww(70px);
+		}
+	}
+
+	p {
+		color: $primary;
+	}
+
+
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sObjects

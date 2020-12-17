@@ -1,0 +1,57 @@
+// start .sShowroom
+.sShowroom {
+	background-color: #222222;
+	--sPB: #{rem(60)};
+
+	&__link {
+		margin-bottom: rem(30);
+		display: block;
+	}
+
+	&__fot {
+		padding-top: rem(45);
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: rem(26);
+		color: #e0ddc9;
+		margin-bottom: rem(50);
+		line-height: 1.23;
+		font-weight: 500;
+	}
+
+	&__addres, &__phone, &__mail {
+		color: #e0ddc9;
+		font-size: rem(18px);
+		line-height: 1.55;
+	}
+
+	&__phone {
+		a {
+			padding-left: 2px;
+			color: #e0ddc9;
+			text-decoration: none;
+		}
+	}
+
+	&__mail {
+		a {
+			padding-left: 2px;
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+		}
+	}
+
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sShowroom

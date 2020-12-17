@@ -1,0 +1,21 @@
+mixin sCatalog(data)
+	// start sCatalog
+	+b.SECTION.sCatalog.section#sCatalog&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h3 Наш каталог
+				
+			.row
+				mixin item(i,t)
+					.col-sm-6.col-lg-3
+						+e.item
+							+e.imgWrap(href="#")
+								+pic(`catalog-${i}.jpg`,'','')
+							+e.title(href="#")= t
+							+e.btn(href="#") Подробнее
+				+item('1','Сумки и клатчи')
+				+item('2','Обувь')
+				+item('3','Одежда')
+				+item('4','Аксессуары')
+
+	// end sCatalog
