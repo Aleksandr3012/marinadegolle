@@ -7,11 +7,9 @@
 		height: rem(500);
 		position: relative;
 		@include media-breakpoint-up(md) {
-			height: rem(700);
+			height: calc(100vh - #{rem(100)});
 		}
-		@include media-breakpoint-up(lg) {
-			height: rem(900);
-		}
+
 	}
 
 	&__content {

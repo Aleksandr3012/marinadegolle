@@ -157,7 +157,10 @@
 </svg></a>
 					</div>
 				</div>
-			</div>
+			</div><a class="basketLink link-modal" href="#modal-basket"><span class="basketLink__inner"><span class="basketLink__price">= 2 560 000 р.</span><span class="basketLink__basket"><span class="basketLink__quantly">99</span><svg class="basketLink__carticon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path>
+<path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path>
+</svg></span></span></a>
 		</footer>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-call" style="display: none">
@@ -174,14 +177,106 @@
 					<!-- +e.input-wrap-->
 					<button class="form-wrap__btn btn" type="submit"> 
 					</button>
-					<div class="form-wrap__polite">
-						<label class="custom-input"><input class="custom-input__input" name="checkbox" type="checkbox"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-						</label>
+					<div class="form-wrap__polite text-center"><small class="form-wrap__text text-secondary">Согласен на обработку <a href="#">персональных данных</a></small>
 					</div>
 				</form>
 			</div>
 		</div>
 		<!-- #modal-call-->
+		<!--modal basket-->
+		<div class="modal-win" id="modal-basket" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<div class="form-wrap__title">Ваш заказ:
+					</div>
+					<div class="form-wrap__prod">
+						<div class="form-wrap__row row align-items-center">
+							<div class="col-3 col-sm-2 order-1">
+								<div class="form-wrap__imgWrap">
+									<!-- picture-->
+									<picture> 
+										<source type="image/webp" srcset="img/@2x/webp/prod-card-slide-1.webp" media="(min-width:576px)"/>
+										<source type="image/webp" srcset="img/@1x/webp/prod-card-slide-1.webp"/>
+										<source type="image/jpg" srcset="img/@2x/prod-card-slide-1.jpg" media="(min-width:576px)"/>
+										<source type="image/jpg" srcset="img/@1x/prod-card-slide-1.jpg"/><img src="img/@2x/prod-card-slide-1.jpg" alt="" loading="lazy"/>
+									</picture>
+									<!-- /picture-->
+								</div>
+							</div>
+							<div class="col-sm-4 order-last order-sm-2"><a class="form-wrap__name" href="#">Розовый женский клатч из кожи крокодила-фуксия</a>
+								<div class="form-wrap__code">Арт.190
+								</div>
+							</div>
+							<div class="col-4 col-sm-3 order-3">
+								<div class="form-wrap__quantity">
+									<button class="form-wrap__minus" type="submit"><svg class="icon icon-minus" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<g>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="14" y1="31" x2="50" y2="31"/>
+</g>
+<g>
+<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="30.999"/>
+</g>
+</svg>
+									</button>
+									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="numb" type="numb" placeholder="10"/>
+									</div>
+									<!-- +e.input-wrap-->
+									<button class="form-wrap__plus" type="submit"><svg class="icon icon-plus" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<g>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="50" x2="32" y2="14"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="14" y1="32" x2="50" y2="32"/>
+</g>
+<g>
+<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="30.999"/>
+</g>
+</svg>
+									</button>
+								</div>
+							</div>
+							<div class="col-4 col-sm-3 order-4">
+								<div class="form-wrap__wrap">
+									<div class="form-wrap__price">2 560 000 р.
+									</div>
+									<button class="form-wrap__remove" type="submit"><svg class="icon icon-remove" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<g>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="18.947" y1="17.153" x2="45.045" y2="43.056"/>
+</g>
+<g>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="19.045" y1="43.153" x2="44.947" y2="17.056"/>
+</g>
+<g>
+<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="30.999"/>
+</g>
+</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-wrap__totalPrice">Сумма: 2 560 000 р.
+					</div>
+					<div class="form-wrap__input-wrap form-group">
+						<label><span class="form-wrap__input-title">Имя</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+						</label>
+					</div>
+					<!-- +e.input-wrap-->
+					<div class="form-wrap__input-wrap form-group">
+						<label><span class="form-wrap__input-title">Email</span><input class="form-wrap__input form-control" name="email" type="email" placeholder=""/>
+						</label>
+					</div>
+					<!-- +e.input-wrap-->
+					<div class="form-wrap__input-wrap form-group">
+						<label><span class="form-wrap__input-title">Телефон</span><input class="form-wrap__input form-control" name="tel" type="tel" placeholder=""/>
+						</label>
+					</div>
+					<!-- +e.input-wrap-->
+					<button class="form-wrap__btn btn btn-dark" type="submit">Отправить
+					</button>
+					<div class="form-wrap__polite text-center"><small class="form-wrap__text text-secondary">Согласен на обработку <a href="#">персональных данных</a></small>
+					</div>
+				</form>
+			</div>
+		</div>
 		<!-- end modals-->
 		<link href="libs/swiper/css/swiper.min.css" rel="stylesheet"/>
 		<link href="libs/@fancyapps/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>

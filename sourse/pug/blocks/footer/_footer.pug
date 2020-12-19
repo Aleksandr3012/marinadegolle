@@ -11,3 +11,12 @@ mixin footer()
 						<svg width="5" height="17" viewBox="0 0 6 20">
 							<path fill="#a2844c" d="M5.78 3.85L3.12.28c-.14-.14-.3-.14-.43 0L.03 3.85c-.14.13-.08.27.13.27h1.72V20h2.06V4.12h1.72c.15 0 .22-.07.19-.17a.26.26 0 00-.07-.1z" fill-rule="evenodd"></path>
 						</svg>
+		+b.basketLink.link-modal(href="#modal-basket")
+			+e.inner
+				+e.price = 2 560 000 р.
+				+e.basket
+					+e.quantly 99
+					<svg class="basketLink__carticon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+							<path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path>
+							<path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path>
+					</svg>

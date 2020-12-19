@@ -12,5 +12,61 @@ mixin modal()
 			+e.BUTTON.btn.btn(type="submit"  ) 
 			+polite()
 	// #modal-call
-	
+
+	//modal basket
+	+b.modal-win(id="modal-basket" class=" " style="display: none" )
+		+form-wrap
+			+e.title Ваш заказ:
+			+e.prod
+				+e.row.row.align-items-center
+					.col-3.col-sm-2.order-1
+						+e.imgWrap
+							+pic('prod-card-slide-1.jpg')
+					.col-sm-4.order-last.order-sm-2
+						+e.name(href="#") Розовый женский клатч из кожи крокодила-фуксия
+						+e.code Арт.190
+					.col-4.col-sm-3.order-3
+						+e.quantity
+							+e.minus(type="submit")
+								<svg class="icon icon-minus" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+									<g>
+										<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="14" y1="31" x2="50" y2="31"/>
+									</g>
+									<g>
+										<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="30.999"/>
+									</g>
+								</svg>
+							+input('10','numb')
+							+e.plus(type="submit")
+								<svg class="icon icon-plus" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+									<g>
+										<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="50" x2="32" y2="14"/>
+										<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="14" y1="32" x2="50" y2="32"/>
+									</g>
+									<g>
+										<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="30.999"/>
+									</g>
+								</svg>
+					.col-4.col-sm-3.order-4
+						+e.wrap
+							+e.price 2 560 000 р.
+							+e.remove(type="submit")
+								<svg class="icon icon-remove" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+									<g>
+										<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="18.947" y1="17.153" x2="45.045" y2="43.056"/>
+									</g>
+									<g>
+										<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="19.045" y1="43.153" x2="44.947" y2="17.056"/>
+									</g>
+									<g>
+										<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="30.999"/>
+									</g>
+								</svg>
+			+e.totalPrice Сумма: 2 560 000 р.
+			+input('','text','Имя')
+			+input('','email','Email')
+			+input('','tel','Телефон')
+			+e.btn.btn.btn-dark(type="submit") Отправить
+			+polite
+				
 	// end modals
