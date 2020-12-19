@@ -66,7 +66,7 @@ $colors: ("blue": $blue,
 
 $primary: #a2844c !default;
 $secondary: $gray-600 !default;
-$success: $green !default;
+$success: #44c200 !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
@@ -350,7 +350,7 @@ $border-widths: (0: 0,
 
 $border-color: $gray-300 !default;
 
-$border-radius: .25rem !default;
+$border-radius: rem(5) !default;
 $border-radius-sm: .2rem !default;
 $border-radius-lg: .3rem !default;
 $border-radius-pill: 50rem !default;
@@ -1264,14 +1264,14 @@ $figure-caption-color: $gray-600 !default;
 
 // Breadcrumbs
 
-$breadcrumb-font-size: null !default;
-$breadcrumb-padding-y: $spacer / 2 !default;
-$breadcrumb-padding-x: $spacer !default;
-$breadcrumb-item-padding-x: .5rem !default;
+$breadcrumb-font-size: $small !default;
+$breadcrumb-padding-y: rem(27) !default;
+$breadcrumb-padding-x: 0 !default;
+$breadcrumb-item-padding-x: .15rem !default;
 $breadcrumb-margin-bottom: 1rem !default;
-$breadcrumb-bg: $gray-200 !default;
+$breadcrumb-bg: transparent !default;
 $breadcrumb-divider-color: $gray-600 !default;
-$breadcrumb-active-color: $gray-600 !default;
+$breadcrumb-active-color: #000 !default;
 $breadcrumb-divider: quote("/") !default;
 $breadcrumb-border-radius: $border-radius !default;
 

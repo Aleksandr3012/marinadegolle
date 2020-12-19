@@ -29,6 +29,7 @@
 	&--mnuRight {
 		@include media-breakpoint-up(lg) {
 			justify-content: flex-end;
+			margin-left: auto;
 		}
 		margin-right: rem(-15);
 	}

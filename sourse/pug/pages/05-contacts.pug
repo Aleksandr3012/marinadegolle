@@ -1,0 +1,27 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sMainCatalog/_sMainCatalog.pug
+include ../blocks/sMenu/_sMenu.pug
+include ../blocks/sAboutText/_sAboutText.pug
+include ../blocks/sAboutPhoto/_sAboutPhoto.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sCollection/_sCollection.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'КОНТАКТЫ'
+	title= title
+block pagecontent
+
+	+mob-mnu()
+	+header()
+		+top-nav()
+	+sContact()
+	+footer()
+
+
+	

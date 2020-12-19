@@ -1,0 +1,28 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sMainCatalog/_sMainCatalog.pug
+include ../blocks/sMenu/_sMenu.pug
+include ../blocks/sAboutText/_sAboutText.pug
+include ../blocks/sAboutPhoto/_sAboutPhoto.pug
+include ../blocks/sShowroom/_sShowroom.pug
+include ../blocks/sProdCard/_sProdCard.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Розовый женский клатч из кожи крокодила-фуксия'
+	title= title
+block pagecontent
+
+	+mob-mnu()
+	+header()
+		+top-nav()
+	+sProdCard()
+	+sShowroom
+	+footer()
+
+
+	

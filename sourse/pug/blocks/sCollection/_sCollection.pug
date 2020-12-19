@@ -1,0 +1,16 @@
+mixin sCollection(data)
+	// start sCollection
+	+b.SECTION.sCollection.section#sCollection&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 МУЖСКАЯ КОЛЛЕКЦИЯ
+				
+			+e.row.row
+				.col-4
+					+pic('zhuk1.jpg','','')
+				.col
+					+pic('zhuk2.jpg','','')
+			.text-center
+				+e.btn.disabled(href="#") ПОСМОТРЕТЬ
+
+	// end sCollection

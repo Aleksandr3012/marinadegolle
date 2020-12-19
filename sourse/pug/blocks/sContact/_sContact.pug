@@ -1,9 +1,22 @@
 mixin sContact()
 	// start sContact
-	+b.SECTION.sContact.section#sContact&attributes(attributes)
+	+b.SECTION.sContact#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
 				
-			.row
+			.row.justify-content-center
+				+e.col.col-md-6
+					+e.mapWrap
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aea544951ace747479f84e108cf3ebfe3123b707706bec0a7db9a9fa59af8d97d&amp;source=constructor"></iframe>
+				+e.content.section.col
+					+e.contentInner
+						+b.section-title
+							h2 Ждём вас в нашем шоуруме<br>по адресу:
+						+e.address г. Москва, 1-ый Зачатьевский переулок, 5
+						+e.phone Телефон:
+							a(href="tel:+79255061717") +79255061717
+						+e.mail E-mail:
+							a(href="mailto:office@degolle.com") office@degolle.com
+						+soc()
+
+
 	// end sContact

@@ -1,0 +1,45 @@
+mixin sProdCard(data)
+	// start sProdCard
+	+b.SECTION.sProdCard.section#sProdCard&attributes(attributes)
+		.container
+			+breadcrumb('Главная', 'Сумки из кожи крокодила' ,'Клатчи ', 'Розовый женский клатч из кожи крокодила-фуксия')
+
+				
+			.row
+				.col-md-6
+					+e.slider--js.swiper-container
+						.swiper-wrapper
+							.swiper-slide
+								+e.slide(href="img/@2x/prod-card-slide-1.jpg" data-fancybox=`prod-card-img`)
+									img.res-i.swiper-lazy(src="#" data-src=`img/@2x/prod-card-slide-1.jpg` alt="")
+							.swiper-slide
+								+e.slide(href="img/@2x/prod-card-slide-1.jpg" data-fancybox=`prod-card-img`)
+									img.res-i.swiper-lazy(src="#" data-src=`img/@2x/prod-card-slide-2.jpg` alt="")
+						.swiper-button-prev
+						.swiper-button-next
+					+e.thumbs--js.swiper-container
+							.swiper-wrapper.justify-content-center
+								.swiper-slide
+									+e.thumbImg
+										img.res-i.swiper-lazy(src="#" data-src=`img/@2x/prod-card-slide-1.jpg` alt="")
+								.swiper-slide
+									+e.thumbImg
+										img.res-i.swiper-lazy(src="#" data-src=`img/@2x/prod-card-slide-2.jpg` alt="")
+				.col-md-6
+					+b.section-title
+						h1 Розовый женский клатч из кожи крокодила-фуксия
+						+e.code Арт.190
+					+e.price 256000&nbsp;р.
+					+e.btn(href="#") ЗАКАЗАТЬ
+					+e.descr
+						+e.item #[strong Материал исполнения:] кожа крокодила
+						+e.item #[strong Цвет: ] розовый, другой по запросу
+						+e.item #[strong Бренд: ] Marina De Golle
+						+e.item #[strong Производство:] Италия (ручная работа)
+			+e.popular Популярное:
+				ul
+					li: a(href="#") куртки из кожи крокодила,
+					li: a(href="#") обувь из крокодила,
+					li: a(href="#") туфли из крокодиловой кожи,
+					li: a(href="#") аксессуары из крокодила
+	// end sProdCard

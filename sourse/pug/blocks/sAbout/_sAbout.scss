@@ -11,16 +11,16 @@
 		margin-right: auto;
 	}
 
+	h1 {
+		font-size: rem(23);
+		font-weight: normal;
+	}
+
 	.section-title {
 		position: relative;
 		text-transform: uppercase;
 		padding-top: rem(30);
 		margin-top: rem(20);
-
-		h1 {
-			font-size: rem(23);
-			font-weight: normal;
-		}
 
 		&::before {
 			content: '';
@@ -40,4 +40,28 @@
 	@include media-breakpoint-only(xl) {}
 	//
 	@include media-breakpoint-down(xl) {}
+
+	&--catalog {
+
+		.section-title {
+			max-width: rem(630);
+			margin-left: auto;
+			margin-right: auto;
+
+			padding-bottom: rem(40);
+
+			&::before {
+				content: none;
+			}
+		}
+		h1 {
+			font-size: rem(40px);
+			font-weight: 500;
+		}
+	}
+
+	&__name {
+		font-size: rem(15);
+		letter-spacing: rem(0.5);
+	}
 } // end.sAbout

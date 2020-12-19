@@ -38,15 +38,19 @@ $output-bourbon-deprecation-warnings: false;
 // @import "./node_modules/bootstrap/scss/nav";
 // @import "./node_modules/bootstrap/scss/navbar";
 // @import "./node_modules/bootstrap/scss/card";
-// @import "./node_modules/bootstrap/scss/breadcrumb";
-// .breadcrumb {
-// 	.active {
-// 		a {
-// 			// color: $breadcrumb-active-color;
-// 			pointer-events: none;
-// 		}
-// 	}
-// }
+@import "./node_modules/bootstrap/scss/breadcrumb";
+.breadcrumb {
+	.active {
+		a {
+			color: $breadcrumb-active-color;
+			pointer-events: none;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
 // @import "./node_modules/bootstrap/scss/pagination";
 
 // .pagination-wrapper ul {

@@ -1,0 +1,50 @@
+
+// start .sCollection
+.sCollection {
+	background-color: #222222;
+	--sPT: #{rem(55)};
+	--sPT: #{rem(55)};
+	--sTPB: #{rem(30)};
+
+	h2 {
+		font-weight: 300;
+		font-size: rem(20px);
+		color: $primary;
+
+	}
+
+	&__row {
+		@include roww(0);
+		margin-bottom: rem(30);
+	}
+
+	picture {
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__btn {
+		text-align: center;
+		@extend .btn;
+		background-color: #000000;
+		color: $primary;
+		font-size: rem(14);
+		border-radius: 0;
+
+		&.disabled {
+			pointer-events: none;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sCollection

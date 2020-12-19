@@ -297,7 +297,31 @@ function eventHandler() {
 		freeModeMomentum: true,
 
 	});
-	// modal window
+
+	var galleryThumbs = new Swiper('.sProdCard__thumbs--js', {
+		spaceBetween: 5,
+		slidesPerView: 7,
+		freeMode: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		lazy: {
+			loadPrevNext: true,
+		},
+	});
+	var galleryTop = new Swiper('.sProdCard__slider--js', {
+		spaceBetween: 0,
+		navigation: {
+			nextEl: '.sProdCard .swiper-button-next',
+			prevEl: '.sProdCard .swiper-button-prev',
+		},
+		thumbs: {
+			swiper: galleryThumbs
+		},
+		lazy: {
+			loadPrevNext: true,
+		},
+	});
+
 
 };
 if (document.readyState !== 'loading') {
