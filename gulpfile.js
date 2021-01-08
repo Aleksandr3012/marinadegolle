@@ -15,11 +15,11 @@ global.$ = {
 	browserSync: require('browser-sync').create(),
 	postcss: require('gulp-postcss'),
 	autoprefixer: require('autoprefixer'),
-	flexGapPolyfill: require('flex-gap-polyfill'),
 	postcssPresetEnv: require('postcss-preset-env'),
 	cssnano: require('cssnano'),
 	nested: require('postcss-nested'),
-	plumber: require('gulp-plumber'), 
+	plumber: require('gulp-plumber'),
+	// webpack: require('webpack-stream'),
 	path: {
 		tasks: require('./gulp/config/tasks.js'),
 	},
@@ -29,6 +29,7 @@ global.$ = {
 $.path.tasks.forEach(function (taskPath) {
 	require(taskPath)();
 });
+
 
 
 $.gulp.task('img', $.gulp.series('cleanimg', 'img-responsive'));
